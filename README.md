@@ -1,3 +1,11 @@
+CSV to prosty plik tekstowy, w którym dane są zapisane w wierszach i kolumnach oddzielonych przecinkami lub średnikami. Jest łatwy do podejrzenia i edycji, ale nie przechowuje informacji o typach danych i jest mniej wydajny przy dużych zbiorach.
+
+Parquet to kolumnowy format plików używany często w Big Data. Przechowuje schemat danych, typy kolumn i jest lepiej skompresowany. Dzięki temu jest szybszy i wydajniejszy przy analizach, szczególnie gdy odczytywane są tylko wybrane kolumny.
+
+DataFrame w Spark to rozproszona struktura danych podobna do tabeli w bazie danych lub arkusza kalkulacyjnego. Dane są uporządkowane w kolumnach, a każda kolumna ma określony typ. DataFrame jest wygodny do analizy danych, ponieważ pozwala łatwo wykonywać operacje takie jak filtrowanie, wybór kolumn, grupowanie i agregacje.
+
+RDD to podstawowa, niższego poziomu struktura danych w Apache Spark. Reprezentuje rozproszony zbiór elementów, na którym można wykonywać operacje takie jak map, filter, reduce czy collect. RDD daje większą kontrolę nad przetwarzaniem danych, ale wymaga więcej ręcznego kodu niż DataFrame.
+
 Celem ćwiczenia było uruchomienie lokalnego środowiska Apache Spark oraz wykonanie podstawowych operacji na danych z użyciem PySpark. W projekcie wykorzystano dwa podejścia:
 
 - DataFrame - wygodny sposób pracy z danymi tabelarycznymi,
